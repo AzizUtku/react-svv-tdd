@@ -1,0 +1,78 @@
+.box-button {
+  display: inline;
+  font-family: "Mukta Malar", Arial;
+}
+
+.btn {
+  background: #fff;
+  color: #000;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.icon-btn:link {
+  border-radius: 100px !important;
+}
+
+.icon-btn::after {
+  border-radius: 100px !important;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn::after {
+  content: "";
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  display: inline-block;
+  z-index: -1;
+  transition: all 0.5s;
+  background: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}
+
+@keyframes comeFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

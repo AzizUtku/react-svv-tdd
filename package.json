@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "@material/react-snackbar": "^0.15.0",
+    "@react-google-maps/api": "^2.1.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "all-the-cities": "^3.1.0",
+    "axios": "^0.21.1",
+    "geolib": "^3.3.1",
+    "include-media": "^1.4.9",
+    "node-sass": "^4.0.0",
+    "react": "^16.13.1",
+    "react-card-component": "0.0.1-beta.5.8.3",
+    "react-dom": "^16.13.1",
+    "react-geocode": "^0.2.3",
+    "react-metric-card": "^1.0.3",
+    "react-scripts": "3.4.1",
+    "react-test-renderer": "^16.13.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -34,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6"
   }
 }

@@ -1,0 +1,66 @@
+@import "../../breakpoints/breakpoints.scss";
+
+@include media("<=phone") {
+  .location-finder {
+    overflow: scroll;
+    height: 100vh;
+    padding: 25px 10%;
+    width: 100%;
+  }
+}
+
+@include media(">phone", "<425px") {
+  .location-finder {
+    overflow: scroll;
+    height: 100vh;
+    padding: 25px 7.5%;
+    width: 100%;
+  }
+}
+
+@include media(">=425px", "<tablet") {
+  .location-finder {
+    overflow: scroll;
+    height: 100vh;
+    padding: 25px 7.5%;
+    width: 100%;
+  }
+}
+
+@include media(">=tablet", "<desktop") {
+  .location-finder {
+    width: 50%;
+  }
+}
+
+@include media(">=desktop") {
+  .location-finder {
+    width: 23%;
+  }
+}
+
+.location-finder {
+  .snackbar-error {
+    .mdc-snackbar__surface {
+      background-color: #c90330;
+    }
+  }
+
+  .mdc-snackbar {
+    top: 0;
+    bottom: initial;
+  }
+
+  .makeStyles-differenceIconSuccess-6 {
+    display: none;
+  }
+
+  .makeStyles-differenceValueSuccess-8 {
+    display: none;
+  }
+}
+
+.result-container {
+  clear: both;
+  margin-top: 60px;
+}
