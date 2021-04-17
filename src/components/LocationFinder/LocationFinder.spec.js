@@ -91,4 +91,14 @@ describe("mounted LocationFinder", () => {
       longitude: 30.916666666,
     });
   });
+
+  it("should not give current city information if coordinates are not in city boundaries when the Process button is clicked", async () => {
+    wrapper.instance().forceUpdate();
+    wrapper.instance().setState({ latitude: "36.63", longitude: "30.86" });
+    wrapper.find(".process").first().simulate("click");
+
+    await new Promise((res) => setTimeout(res, 5000));
+
+    expect(wrapper.instance().state.currentCity).toEqual(undefined);
+  });
 });
