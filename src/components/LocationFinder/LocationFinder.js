@@ -7,10 +7,11 @@ import { Snackbar } from "@material/react-snackbar";
 import { MetricCard } from "react-metric-card";
 import { calculateDistanceToEarthCenter } from "../../utils";
 import { fetchNearestCity } from "../../api";
+import { GOOGLE_API_KEY } from "../../credantials";
 import "@material/react-snackbar/dist/snackbar.css";
 import "./LocationFinder.scss";
 
-Geocode.setApiKey("AIzaSyAqYkQRBwAv7sOWZFVDyDEsu2Qkkl8c1fI");
+Geocode.setApiKey(GOOGLE_API_KEY);
 Geocode.setLanguage("en");
 Geocode.setRegion("tr");
 Geocode.setLocationType("ROOFTOP");
